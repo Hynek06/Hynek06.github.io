@@ -96,7 +96,7 @@ function showMainPage() {
     gap: 20px;
     margin-top: 10%px;
 ">
-    <input type="button" value="<" onclick="ChangeImage(-1)" style="margin-bottom: 17%;padding: 10px 20px;background-color: white;border: 1px solid rgb(0, 0, 0);border-radius: 5px;box-shadow: 2px 2px 15px 1px rgb(168, 168, 168);font-size: 20px;">
+    
     <table>
     <tr>
         <td>
@@ -108,8 +108,15 @@ function showMainPage() {
             <img src="m0.png" id="Image" height="300px" width="300px" style="background-color: white;border: 1px solid rgb(0, 0, 0);border-radius: 5px;box-shadow: 2px 2px 15px 1px rgb(168, 168, 168);font-size: 20px;margin-top: 5%;">
         </td>
     </tr>
+    <tr>
+        <td>
+            <input type="button" value="<" onclick="ChangeImage(-1)" style="margin-bottom: 17%;padding: 10px 20px;background-color: white;border: 1px solid rgb(0, 0, 0);border-radius: 5px;box-shadow: 2px 2px 15px 1px rgb(168, 168, 168);font-size: 20px;">
+            <input type="button" value=">" onclick="ChangeImage(+1)" style="margin-bottom: 17%;margin-left: 190px;padding: 10px 20px;background-color: white;border: 1px solid rgb(0, 0, 0);border-radius: 5px;box-shadow: 2px 2px 15px 1px rgb(168, 168, 168);font-size: 20px;">
+        </td>
+
+    </tr>
     </table>
-    <input type="button" value=">" onclick="ChangeImage(+1)" style="margin-bottom: 17%;padding: 10px 20px;background-color: white;border: 1px solid rgb(0, 0, 0);border-radius: 5px;box-shadow: 2px 2px 15px 1px rgb(168, 168, 168);font-size: 20px;">
+    
 </div>
 
     `;
@@ -144,5 +151,3 @@ function showMainPage() {
 
 </body>
 </html>
-
-
