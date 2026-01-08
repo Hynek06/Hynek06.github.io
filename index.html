@@ -100,7 +100,7 @@ function showMainPage() {
     <table>
     <tr>
         <td>
-            <div id="Month" style="align-items: center;width: 300px;border: 3px solid gray;display: flex;justify-content: center;height: 50px;background-color: white;border: 1px solid rgb(0, 0, 0);border-radius: 5px;box-shadow: 2px 2px 15px 1px rgb(168, 168, 168);font-size: 20px;">0 Měsíců</div>   
+            <div id="Month" style="align-items: center;width: 300px;border: 3px solid gray;display: flex;justify-content: center;height: 50px;background-color: white;border: 1px solid rgb(0, 0, 0);border-radius: 5px;box-shadow: 2px 2px 15px 1px rgb(168, 168, 168);font-size: 20px;"><span id="Text">0 Měsíců</span></div>   
         </td>
     </tr>
     <tr>
@@ -123,7 +123,16 @@ function showMainPage() {
         
         if (i + a >= 0 && i + a <= 18) {
             i = i + a
-      
+            if (a == 1) {
+                 document.getElementById("Text").innerHTML = i+" Měsíc"
+            }
+            else if (i >= 2 && i <= 4) {
+                document.getElementById("Text").innerHTML = i+" Měsíce"
+            }
+            else {
+                document.getElementById("Text").innerHTML = i+" Měsíců"
+            }
+            
             document.getElementById("Image").src = "m"+String(i)+".png"
         }
 
@@ -135,5 +144,3 @@ function showMainPage() {
 
 </body>
 </html>
-
-
